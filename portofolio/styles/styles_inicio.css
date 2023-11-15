@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding:0;
+}
+  
+body {background-color: #1F222C;}
+
+.contenedorb {
+    display: flex;
+    width: 98vw;
+    height: 99vh;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #1f222c ;
+    border:2px solid red;
+    flex-direction: column;
+  }
+  .contenedorcabecera{
+    height: 20vh;
+    width: 98vw;
+    margin-top: 1em;
+  }
+
+  .contenedorlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Acumin', sans-serif;
+    font-size:150px;
+    color:#ffffff;
+    width: 29vw;
+    height:20vh;
+
+  }
+
+  .contenedormenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Acumin', sans-serif;
+    font-size:150px;
+    color:#ffffff;
+    width: 65vw;
+    height:20vh;
+    margin-left: 1.7em;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em
+  }
+  
+  .card1 {
+    width: 250px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .f1 {
+    width: 100px;
+    height: 25px;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  
+  .card2 {
+    width: 250px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  .f2 {
+    width: 100px;
+    height: 25px;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  
+  .card3 {
+    width: 250px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .f3 {
+    width: 100px;
+    height: 25px;
+    margin-top: 1Em;
+    margin-left: 1em;
+  }
+  
+  .card4 {
+    width: 250px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .wec {
+    width: 100px;
+    height: 25px;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.02;
+    background-color: #ff1d01;
+  }
+
+  .card1:active {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #ff1d01;
+  }
+
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.02;
+    background-color: #0090d0;
+  }
+  .card2:active {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #0090d0;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.02;
+    background-color: #d00000;
+  }
+  .card3:active {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #d00000;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.02;
+    background-color: #0046ac;
+  }
+  .card4:active {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #0046ac;
+  }
+  
+
+.pagnews{
+display: flex;
+flex-direction: row;
+border:2px solid pink;
+margin-top: 10px;
+width: 97vw;
+height: 80vh;
+
+}
+
+.news{
+  display:flex;
+  flex-direction: row;
+  margin:0.7em;
+  width: 32vw;
+  height: 72vh;
+  border:2px solid green;
+  color:whitesmoke;
+  flex-direction: column;
+}
+
+.titulonews{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid yellow;
+  height: 10vh;
+  width: 32vw;
+}
+
+.tituloarticulo{
+    display: flex;
+    justify-content: center;
+    border:2px solid rgb(0, 247, 255);
+    height: 5vh;
+    margin-top: -5em;
+ 
+}
+.articulo{
+  display: flex;
+  justify-content: center;
+  border:2px solid yellow;
+  height: 72vh;
+  width: 32vw;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+  margin-top: -50px;
+}
+
+.vegascircuit{
+  display: flex;
+  width:450px;
+  height: 525px;
+  margin: auto;
+}
