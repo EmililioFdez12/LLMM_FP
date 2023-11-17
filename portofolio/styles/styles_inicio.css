@@ -25,18 +25,6 @@ body {
   padding-bottom: 5px;
 }
 
-.contenedorlogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Acumin', sans-serif;
-  font-size: 150px;
-  color: #ffffff;
-  width: 29vw;
-  height: 20vh;
-  margin-left: 1em;
-}
-
 .contenedormenu {
   display: flex;
   justify-content: center;
@@ -44,9 +32,11 @@ body {
   font-family: 'Acumin', sans-serif;
   font-size: 150px;
   color: #ffffff;
-  width: 65vw;
+  width: 90vw;
   height: 20vh;
-  margin-left: 1.5em;
+  margin-left: 0.4em;
+  margin-top: 0.05em;
+  
 }
 
 .main {
@@ -142,6 +132,25 @@ body {
   margin-left: 1em;
 }
 
+.card5 {
+  width: 30vw;
+  height: 18vh;
+  outline: none;
+  border: none;
+  margin-top: 7.5vh;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+}
+
+.apxrevmini {
+  width: 10vw;
+  height: 10vh;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
 .card1:hover {
   cursor: pointer;
   scale: 1.02;
@@ -189,6 +198,18 @@ body {
   cursor: pointer;
   scale: 1.1;
   background-color: #0046ac;
+}
+
+.card5:hover {
+  cursor: pointer;
+  scale: 1.02;
+  background-color: rgb(113, 192, 245)
+}
+
+.card5:active {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #999999;
 }
 
 
