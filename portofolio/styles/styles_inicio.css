@@ -11,18 +11,18 @@ body {
   display: flex;
   width: 97vw;
   height: 99vh;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: #1f222c;
-  /*border:2px solid red;*/
   flex-direction: column;
 }
 
 .contenedorcabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 20vh;
   width: 97vw;
-  border-bottom: 2px solid white;
   padding-bottom: 5px;
+  margin-top: 2vh;
+
 }
 
 .contenedormenu {
@@ -35,8 +35,7 @@ body {
   width: 90vw;
   height: 20vh;
   margin-left: 0.4em;
-  margin-top: 0.05em;
-  
+
 }
 
 .main {
@@ -62,7 +61,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  background: white;
+  background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -80,7 +79,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  background: white;
+  background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -99,7 +98,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  background: white;
+  background: #fff6e6;
   box-shadow: #32325d40 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -118,7 +117,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  background: white;
+  background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -137,8 +136,8 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  margin-top: 7.5vh;
-  background: white;
+  margin-top: 4vh;
+  background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -162,7 +161,6 @@ body {
   scale: 1.1;
   background-color: #ff1d01;
 }
-
 
 .card2:hover {
   cursor: pointer;
@@ -212,21 +210,18 @@ body {
   background-color: #999999;
 }
 
-
 .pagnews {
   display: flex;
   flex-direction: row;
-  /*border:2px solid pink;*/
-  margin-top: 10px;
   width: 97vw;
   height: 80vh;
-
+  margin-left:1.3em;
 }
 
 .news {
   display: flex;
   flex-direction: row;
-  margin: 0.7em;
+  margin: 0.8em;
   width: 32vw;
   height: 72vh;
   padding: 5px;
@@ -276,7 +271,7 @@ body {
   font-family: 'Kanit', 'Sans-serif';
   height: 72vh;
   width: 32vw;
-  font-size: 2.9vh;
+  font-size: 2.83vh;
   text-align: justify;
   flex-direction: column;
   color: #d1d1d1;
@@ -292,7 +287,7 @@ a {
   width: 27.5vw;
   height: 63vh;
   margin: auto;
-  box-shadow: rgb(174, 33, 33) 0 0 10px 0;  
+  box-shadow: rgb(174, 33, 33) 0 0 10px 0;
   border-radius: 7px;
 }
 
@@ -301,60 +296,114 @@ a {
   width: 27.5vw;
   height: 63vh;
   margin: auto;
-  border:2px solid #2159ae;
-  box-shadow: #2159ae 0 0 10px 0;  
+  border: 2px solid #2159ae;
+  box-shadow: #2159ae 0 0 10px 0;
   border-radius: 5px;
 }
 
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
 
   .contenedorb {
     display: flex;
     width: 97vw;
-    height: 99vh;
-    margin-left: 20px;
-    margin-right: 20px;
+    height: 230vh;
     background-color: #1f222c;
-    border:2px solid red;
-    flex-direction: column;
   }
 
   .contenedorcabecera {
     height: 50vh;
-    width: 97vw;
-    border-bottom: 2px solid white;
-    border:3px solid yellow;
-    flex-wrap: wrap;
+    width: 96vw;
+    margin-top: 0em;
   }
 
-  .contenedorlogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Acumin', sans-serif;
-    font-size: 150px;
-    color: #ffffff;
-    width: 29vw;
-    height: 20vh;
-    margin-left: 1em;
-    border:2px solid rgb(0, 255, 136);
-    flex-direction:column;
-    flex-wrap: wrap;
-    
-  }
-  
+
   .contenedormenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Acumin', sans-serif;
-    font-size: 150px;
-    color: #ffffff;
-    width: 30vw;
+    margin-top: -1.75em;
+    width: 97vw;
     height: 20vh;
-    margin-left: 1.5em;
-    border:2px solid rgb(234, 0, 255);
-    flex-direction:column;
+    margin-left: 0em;
   }
+
+  .card1, .card2, .card3, .card4 {
+    margin-right: 0em;
+    width: 17vw;
+    height: 16vh;
+  }
+
+  .card5 {
+    margin-top: 3.6em;
+    width: 17vw;
+    height: 16vh;
+  }
+
+  .apxrevmini {
+    width: 12vw;
+    height: 6vh;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .f1,
+  .f2,
+  .f3 {
+    width: 8vw;
+    height: 3vh;
+  }
+
+  .wec {
+    width: 9vw;
+    height: 3vh;
+  }
+
+  .pagnews {
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    height: 80vh;
+    margin-top:-16em;
+    margin-left:0em;
+  }
+
+  .news {
+    border: 0;
+    margin-left: 0.5em;
+    width: 93vw;
+    height: 73vh;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+    padding-bottom: 1em;
+  }
+    .titulonews {
+      margin-left: 5em;
+      height: 10vh;
+      width: 45vw;
+      font-size: 4vh;
+      letter-spacing: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 0;
+    }
+   
+    .articulo {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      font-family: 'Kanit', 'Sans-serif';
+      height: 72vh;
+      width: 90vw;
+      font-size: 2.83vh;
+      text-align: justify;
+      flex-direction: column;
+      color: #d1d1d1;
+    }
+
+    .vegaslayout {
+      width: 60vw;
+      height: 60vh;
+    }
+    
+    .vegascircuit {
+      width: 60vw;
+      height: 60vh;
+    }
 }
