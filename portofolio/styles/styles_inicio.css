@@ -154,6 +154,7 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #ff1d01;
+  box-shadow: #ff1d01 0 0 10px 0;
 }
 
 .card1:active {
@@ -166,6 +167,7 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #0090d0;
+  box-shadow: #0090d0 0 0 10px 0;
 }
 
 .card2:active {
@@ -178,6 +180,8 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #d00000;
+  box-shadow: #d00000 0 0 10px 0;
+  
 }
 
 .card3:active {
@@ -190,6 +194,8 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #0046ac;
+  box-shadow: #0046ac 0 0 10px 0;
+
 }
 
 .card4:active {
@@ -201,7 +207,9 @@ body {
 .card5:hover {
   cursor: pointer;
   scale: 1.02;
-  background-color: rgb(113, 192, 245)
+  background-color: #71c0f5;
+  box-shadow: #71c0f5 0 0 10px 0;
+
 }
 
 .card5:active {
@@ -234,7 +242,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #5189cf;
+  border: 5px solid #5189cf;
+  border-radius: 20px;
   box-shadow: #254770 0 0 10px 1px;
   height: 10vh;
   width: 32vw;
@@ -251,9 +260,10 @@ body {
 .tituloarticulo {
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #df0d0d;
-  border-right: 2px solid #df0d0d;
+  border-bottom: 3px solid #df0d0d;
+  border-right: 3px solid #df0d0d;
   box-shadow: #700808 2px 2px 2px 1px;
+  border-radius: 10px;
   padding: 5px;
   height: 5vh;
   font-size: 3.9vh;
@@ -287,8 +297,8 @@ a {
   width: 27.5vw;
   height: 63vh;
   margin: auto;
-  box-shadow: rgb(174, 33, 33) 0 0 10px 0;
-  border-radius: 7px;
+  box-shadow: rgb(174, 33, 33) 0 0 20px 0;
+  border-radius: 10px;
 }
 
 .vegascircuit {
@@ -296,8 +306,8 @@ a {
   width: 27.5vw;
   height: 63vh;
   margin: auto;
-  border: 2px solid #2159ae;
-  box-shadow: #2159ae 0 0 10px 0;
+  border: 7px solid #2159ae;
+  box-shadow: #2159ae 0 0 30px 0;
   border-radius: 5px;
 }
 
