@@ -22,7 +22,6 @@ body {
   width: 97vw;
   padding-bottom: 5px;
   margin-top: 2vh;
-
 }
 
 .contenedormenu {
@@ -35,8 +34,6 @@ body {
   width: 90vw;
   height: 20vh;
   margin-left: 0.4em;
-  border-bottom: 2px solid;
-
 }
 
 .main {
@@ -62,7 +59,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  background: white;
+  background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -75,31 +72,13 @@ body {
   margin-left: 1em;
 }
 
-.card2 {
-  width: 12vw;
-  height: 18vh;
-  outline: none;
-  border: none;
-  background: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .2s ease-in-out;
-  border-radius: 5px;
-
-}
-
-.f2 {
-  width: 6vw;
-  height: 3vh;
-  margin-top: 1em;
-  margin-left: 1em;
-}
 
 .card3 {
   width: 12vw;
   height: 18vh;
   outline: none;
   border: none;
-  background: white;
+  background: #fff6e6;
   box-shadow: #32325d40 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -118,7 +97,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  background: white;
+  background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -137,8 +116,8 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  margin-top: 4vh;
-  background: white;
+  margin-top: 2.7em;
+  background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
   border-radius: 5px;
@@ -155,6 +134,7 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #ff1d01;
+  box-shadow: #ff1d01 0 0 10px 0;
 }
 
 .card1:active {
@@ -167,6 +147,7 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #0090d0;
+  box-shadow: #0090d0 0 0 10px 0;
 }
 
 .card2:active {
@@ -179,6 +160,8 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #d00000;
+  box-shadow: #d00000 0 0 10px 0;
+  
 }
 
 .card3:active {
@@ -191,6 +174,8 @@ body {
   cursor: pointer;
   scale: 1.02;
   background-color: #0046ac;
+  box-shadow: #0046ac 0 0 10px 0;
+
 }
 
 .card4:active {
@@ -202,7 +187,9 @@ body {
 .card5:hover {
   cursor: pointer;
   scale: 1.02;
-  background-color: rgb(113, 192, 245)
+  background-color: #71c0f5;
+  box-shadow: #71c0f5 0 0 10px 0;
+
 }
 
 .card5:active {
@@ -216,12 +203,14 @@ body {
   flex-direction: row;
   width: 97vw;
   height: 80vh;
-
+  margin-left:1.3em;
 }
 
 .news {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: 0.8em;
   width: 32vw;
   height: 72vh;
@@ -235,10 +224,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #5189cf;
+  text-align: center;
+  border: 4px solid #5189cf;
+  border-radius: 15px;
   box-shadow: #254770 0 0 10px 1px;
   height: 10vh;
-  width: 32vw;
+  width: 20vw;
   font-size: 4vh;
   letter-spacing: 5px;
   font-family: 'Kanit', 'Sans-serif';
@@ -252,12 +243,14 @@ body {
 .tituloarticulo {
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #df0d0d;
-  border-right: 2px solid #df0d0d;
+  border-bottom: 3px solid #df0d0d;
+  border-right: 3px solid #df0d0d;
   box-shadow: #700808 2px 2px 2px 1px;
+  border-radius: 10px;
   padding: 5px;
   height: 5vh;
   font-size: 3.9vh;
+  width: 25vw;
   margin-top: 10px;
   color: #ca2828;
   text-shadow: 0 0 5px;
@@ -272,7 +265,7 @@ body {
   font-family: 'Kanit', 'Sans-serif';
   height: 72vh;
   width: 32vw;
-  font-size: 2.83vh;
+  font-size: 3vh;
   text-align: justify;
   flex-direction: column;
   color: #d1d1d1;
@@ -283,22 +276,23 @@ a {
   margin-top: -50px;
 }
 
-.vegaslayout {
+.f499p {
   display: flex;
   width: 27.5vw;
-  height: 63vh;
+  height: 47vh;
   margin: auto;
-  box-shadow: rgb(174, 33, 33) 0 0 10px 0;
-  border-radius: 7px;
+  box-shadow: rgb(174, 33, 33) 0 0 20px 0;
+  border-radius: 5px;
+  border:7px solid #df0d0d
 }
 
-.vegascircuit {
+.vegasresult {
   display: flex;
-  width: 27.5vw;
-  height: 63vh;
+  width: 30vw;
+  height: 55vh;
   margin: auto;
-  border: 2px solid #2159ae;
-  box-shadow: #2159ae 0 0 10px 0;
+  border: 7px solid #2159ae;
+  box-shadow: #2159ae 0 0 30px 0;
   border-radius: 5px;
 }
 
@@ -310,7 +304,6 @@ a {
     width: 97vw;
     height: 230vh;
     background-color: #1f222c;
-    border: 2px solid red;
   }
 
   .contenedorcabecera {
@@ -325,7 +318,6 @@ a {
     width: 97vw;
     height: 20vh;
     margin-left: 0em;
-    border: 2px solid rgb(234, 0, 255);
   }
 
   .card1, .card2, .card3, .card4 {
@@ -346,25 +338,13 @@ a {
     margin-top: 1em;
     margin-left: 1em;
   }
-
-  .f1,
-  .f2,
-  .f3 {
-    width: 8vw;
-    height: 3vh;
-  }
-
-  .wec {
-    width: 9vw;
-    height: 3vh;
-  }
-
   .pagnews {
     display: flex;
     flex-direction: column;
     width: 97vw;
     height: 80vh;
     margin-top:-16em;
+    margin-left:0em;
   }
 
   .news {
@@ -374,9 +354,16 @@ a {
     height: 73vh;
     flex-direction: column;
     border-bottom: 2px solid white;
+    padding-bottom: 1em;
   }
+
+  .tituloarticulo {
+    font-size: 3.9vh;
+    width: 50vw;
+  }
+
     .titulonews {
-      margin-left: 5em;
+      margin-left: 0em;
       height: 10vh;
       width: 45vw;
       font-size: 4vh;
@@ -384,28 +371,109 @@ a {
       padding-bottom: 5px;
       margin-bottom: 0;
     }
-
    
     .articulo {
       display: flex;
-      justify-content: left;
+      justify-content: center;
       margin-top: 20px;
       font-family: 'Kanit', 'Sans-serif';
       height: 72vh;
       width: 90vw;
-      font-size: 2.83vh;
-      text-align: justify;
-      flex-direction: column;
-      color: #d1d1d1;
+      font-size: 3vh;
     }
 
-    .vegaslayout {
-      width: 60vw;
-      height: 60vh;
+    .f499p{
+      width: 70vw;
+      height: 45vh;
     }
-    
-    .vegascircuit {
-      width: 60vw;
-      height: 60vh;
+  }
+
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+    .contenedorb {
+      display: flex;
+      width: 97vw;
+      height: 230vh;
+      background-color: #1f222c;
     }
-}
+  
+    .contenedorcabecera {
+      height: 50vh;
+      width: 96vw;
+      margin-top: 0em;
+    }
+  
+  
+    .contenedormenu {
+      margin-top: -1.75em;
+      width: 97vw;
+      height: 20vh;
+      margin-left: 0em;
+    }
+  
+    .card1, .card3, .card4 {
+      margin-right: 0em;
+      width: 16vw;
+      height: 17vh;
+    }
+  
+    .card5 {
+      margin-top: 3.6em;
+      width: 17vw;
+      height: 16vh;
+    }
+  
+    .apxrevmini {
+      width: 12vw;
+      height: 6vh;
+      margin-top: 1em;
+      margin-left: 1em;
+    }
+    .pagnews {
+      display: flex;
+      flex-direction: column;
+      width: 97vw;
+      height: 80vh;
+      margin-top:-16em;
+      margin-left:0em;
+    }
+  
+    .news {
+      border: 0;
+      margin-left: 0.5em;
+      width: 93vw;
+      height: 73vh;
+      flex-direction: column;
+      border-bottom: 2px solid white;
+      padding-bottom: 1em;
+    }
+  
+    .tituloarticulo {
+      font-size: 3.9vh;
+      width: 50vw;
+    }
+  
+      .titulonews {
+        margin-left: 0em;
+        height: 10vh;
+        width: 45vw;
+        font-size: 4vh;
+        letter-spacing: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+      }
+     
+      .articulo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-family: 'Kanit', 'Sans-serif';
+        height: 72vh;
+        width: 90vw;
+        font-size: 3vh;
+      }
+  
+      .f499p{
+        width: 60vw;
+        height: 55vh;
+      }
+    }
