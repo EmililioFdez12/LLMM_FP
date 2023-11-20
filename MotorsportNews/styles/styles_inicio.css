@@ -22,7 +22,6 @@ body {
   width: 97vw;
   padding-bottom: 5px;
   margin-top: 2vh;
-
 }
 
 .contenedormenu {
@@ -35,7 +34,6 @@ body {
   width: 90vw;
   height: 20vh;
   margin-left: 0.4em;
-
 }
 
 .main {
@@ -136,7 +134,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  margin-top: 4vh;
+  margin-top: 7.5vh;
   background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
