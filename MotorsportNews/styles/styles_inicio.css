@@ -179,7 +179,7 @@ body {
   scale: 1.02;
   background-color: #d00000;
   box-shadow: #d00000 0 0 10px 0;
-  
+
 }
 
 .card3:active {
@@ -221,7 +221,7 @@ body {
   flex-direction: row;
   width: 97vw;
   height: 80vh;
-  margin-left:1.3em;
+  margin-left: 1.3em;
 }
 
 .news {
@@ -279,7 +279,7 @@ body {
   font-family: 'Kanit', 'Sans-serif';
   height: 72vh;
   width: 32vw;
-  font-size: 2.83vh;
+  font-size: 2.8vh;
   text-align: justify;
   flex-direction: column;
   color: #d1d1d1;
@@ -290,19 +290,20 @@ a {
   margin-top: -50px;
 }
 
-.vegaslayout {
+.verham {
   display: flex;
   width: 27.5vw;
   height: 63vh;
   margin: auto;
-  box-shadow: rgb(174, 33, 33) 0 0 20px 0;
+  box-shadow: #ae2121 0 0 20px 0;
+  border: #ae2121 7px solid;
   border-radius: 10px;
 }
 
-.vegascircuit {
+.marina {
   display: flex;
-  width: 27.5vw;
-  height: 63vh;
+  width: 29.5vw;
+  height: 59vh;
   margin: auto;
   border: 7px solid #2159ae;
   box-shadow: #2159ae 0 0 30px 0;
@@ -327,20 +328,24 @@ a {
 
 
   .contenedormenu {
-    margin-top: -1.75em;
+    margin-top: -1em;
+    margin-bottom: 0.6em;
     width: 97vw;
     height: 20vh;
     margin-left: 0em;
   }
 
-  .card1, .card2, .card3, .card4 {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
     margin-right: 0em;
     width: 17vw;
     height: 16vh;
   }
 
   .card5 {
-    margin-top: 3.6em;
+    margin-top: 4.7em;
     width: 17vw;
     height: 16vh;
   }
@@ -369,8 +374,8 @@ a {
     flex-direction: column;
     width: 97vw;
     height: 80vh;
-    margin-top:-16em;
-    margin-left:0em;
+    margin-top: -16em;
+    margin-left: 0em;
   }
 
   .news {
@@ -382,36 +387,37 @@ a {
     border-bottom: 2px solid white;
     padding-bottom: 1em;
   }
-    .titulonews {
-      margin-left: 5em;
-      height: 10vh;
-      width: 45vw;
-      font-size: 4vh;
-      letter-spacing: 5px;
-      padding-bottom: 5px;
-      margin-bottom: 0;
-    }
-   
-    .articulo {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      font-family: 'Kanit', 'Sans-serif';
-      height: 72vh;
-      width: 90vw;
-      font-size: 2.83vh;
-      text-align: justify;
-      flex-direction: column;
-      color: #d1d1d1;
-    }
 
-    .vegaslayout {
-      width: 60vw;
-      height: 60vh;
-    }
-    
-    .vegascircuit {
-      width: 60vw;
-      height: 60vh;
-    }
+  .titulonews {
+    margin-left: 5em;
+    height: 10vh;
+    width: 45vw;
+    font-size: 4vh;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+
+  .articulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Kanit', 'Sans-serif';
+    height: 72vh;
+    width: 90vw;
+    font-size: 2.83vh;
+    text-align: justify;
+    flex-direction: column;
+    color: #d1d1d1;
+  }
+
+  .verham {
+    width: 65vw;
+    height: 60vh;
+  }
+
+  .marina {
+    width: 75vw;
+    height: 60vh;
+  }
 }
