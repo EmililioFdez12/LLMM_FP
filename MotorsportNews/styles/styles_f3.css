@@ -296,7 +296,7 @@ a {
 
 .vegaslayout {
   display: flex;
-  width: 27.5vw;
+  width: 27vw;
   height: 70vh;
   margin: auto;
   box-shadow: rgb(174, 33, 33) 0 0 20px 0;
@@ -306,7 +306,7 @@ a {
 
 .vegasresult {
   display: flex;
-  width: 30vw;
+  width: 29vw;
   height: 55vh;
   margin: auto;
   border: 7px solid #2159ae;
@@ -314,7 +314,7 @@ a {
   border-radius: 5px;
 }
 
-
+/*Adaptado para moviles*/
 @media only screen and (max-width:768px) {
 
   .contenedorb {
@@ -338,14 +338,15 @@ a {
     margin-left: 0em;
   }
 
-  .card1, .card2, .card3, .card4 {
+  .card1,.card3, .card4 {
     margin-right: 0em;
     width: 17vw;
     height: 16vh;
+    margin-top:15vh;
   }
 
   .card5 {
-    margin-top: 3.6em;
+    margin-top:15vh;
     width: 17vw;
     height: 16vh;
   }
@@ -358,7 +359,6 @@ a {
   }
 
   .f1,
-  .f2,
   .f3 {
     width: 8vw;
     height: 3vh;
@@ -374,7 +374,7 @@ a {
     flex-direction: column;
     width: 97vw;
     height: 80vh;
-    margin-top:-16em;
+    margin-top:-27vh;
     margin-left:0em;
   }
 
@@ -424,6 +424,7 @@ a {
     }
 }
 
+/*Adaptado para tablets*/
 @media only screen and (min-width:768px) and (max-width:1024px) {
 
   .contenedorb {
@@ -439,7 +440,6 @@ a {
     margin-top: 0em;
   }
 
-
   .contenedormenu {
     margin-top: -1.75em;
     width: 97vw;
@@ -451,10 +451,11 @@ a {
     margin-right: 0em;
     width: 17vw;
     height: 16vh;
+    margin-top: 15vh;
   }
 
   .card5 {
-    margin-top: 3.6em;
+    margin-top: 15vh;
     width: 17vw;
     height: 16vh;
   }
@@ -467,7 +468,6 @@ a {
   }
 
   .f1,
-  .f2,
   .f3 {
     width: 8vw;
     height: 3vh;
@@ -483,7 +483,7 @@ a {
     flex-direction: column;
     width: 97vw;
     height: 80vh;
-    margin-top:-16em;
+    margin-top:-30vh;
     margin-left:0em;
   }
 

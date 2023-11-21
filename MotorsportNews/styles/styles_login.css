@@ -39,7 +39,7 @@ video {
     line-height: 2rem;
     font-weight: 700;
   }
-  
+ /*Estilos de formulario*/ 
   .form {
     margin-top: 1.5rem;
     margin-right: 2.5rem;
@@ -73,6 +73,7 @@ video {
     border-color:#0090d0;
   }
   
+  /*Personalizacion de botones*/
   .sign {   
     width: 60%;
     background-color:#0090d0;
@@ -86,10 +87,8 @@ video {
     box-shadow: #0090d0 0 0 10px 0;
     cursor: pointer;
     font-size: 1.5em;
-
   }
  
-  
   .signup {
     text-align: center;
     font-size: 0.75rem;
@@ -99,4 +98,20 @@ video {
 
   a{
     text-decoration: none;
+  }
+
+  .nextpage {   
+    width: 50%;
+    background-color:#ca2525;
+    padding: 0.75rem;
+    text-align: center;
+    color:#fff6e6;
+    border: 0.01em solid white;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    margin-top:1em;
+    box-shadow: #da3a3a 0 0 10px 0;
+    cursor: pointer;
+    font-size: 1.5em;
+
   }

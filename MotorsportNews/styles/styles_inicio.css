@@ -1,3 +1,5 @@
+/*Decoracion de la página, medidas, y responsive*/
+
 * {
   margin: 0;
   padding: 0;
@@ -134,7 +136,7 @@ body {
   height: 18vh;
   outline: none;
   border: none;
-  margin-top: 2.7em;
+  margin-top: 7.5vh;
   background: #fff6e6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .2s ease-in-out;
@@ -292,8 +294,8 @@ a {
 
 .standings {
   display: flex;
-  width: 30vw;
-  height: 60vh;
+  width: 29vw;
+  height: 59vh;
   margin: auto;
   border: 7px solid #2159ae;
   box-shadow: #2159ae 0 0 30px 0;
@@ -302,7 +304,7 @@ a {
 
 .marina {
   display: flex;
-  width: 29.5vw;
+  width: 29vw;
   height: 59vh;
   margin: auto;
   border: 7px solid #2159ae;
@@ -310,7 +312,7 @@ a {
   border-radius: 5px;
 }
 
-
+/*Adaptado para moviles*/
 @media only screen and (max-width:768px) {
 
   .contenedorb {
@@ -340,10 +342,12 @@ a {
     margin-right: 0em;
     width: 17vw;
     height: 16vh;
+    margin-top: 15vh;
+
   }
 
   .card5 {
-    margin-top: 3.6em;
+    margin-top: 15vh;
     width: 17vw;
     height: 16vh;
   }
@@ -371,7 +375,7 @@ a {
     flex-direction: column;
     width: 97vw;
     height: 80vh;
-    margin-top: -16em;
+    margin-top: -30vh;
     margin-left: 0em;
   }
 
@@ -402,7 +406,7 @@ a {
     font-family: 'Kanit', 'Sans-serif';
     height: 72vh;
     width: 90vw;
-    font-size: 2.83vh;
+    font-size: 3vh;
     text-align: justify;
     flex-direction: column;
     color: #d1d1d1;
@@ -419,6 +423,7 @@ a {
   }
 }
 
+/*Adaptado para tablets*/
 @media only screen and (min-width:768px) and (max-width:1024px) {
 
   .contenedorb {
@@ -448,10 +453,12 @@ a {
     margin-right: 0em;
     width: 17vw;
     height: 16vh;
+    margin-top: 15vh;
+
   }
 
   .card5 {
-    margin-top: 3.6em;
+    margin-top: 15vh;
     width: 17vw;
     height: 16vh;
   }
@@ -479,8 +486,8 @@ a {
     flex-direction: column;
     width: 97vw;
     height: 80vh;
-    margin-top: -16em;
-    margin-left: 0em;
+    margin-top: -30vh;
+    margin-left: 0;
   }
 
   .news {
