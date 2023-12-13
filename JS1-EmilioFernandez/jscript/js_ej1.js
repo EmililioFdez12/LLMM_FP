@@ -39,11 +39,12 @@ let nota = Number(prompt("Introduce la nota: "))
 if (nota < 5) {
     alert("Un " + nota + " esta suspenso")
 } else if (nota >= 5 && nota <= 7) {
-    
-} else {
-    
+    alert("Un " + nota + " es un bien")
+} else if (nota > 7 && nota < 9) {
+    alert("Un " + nota + " es un notable")  
+}else if (nota >= 9 && nota <= 10) {
+    alert("Un " + nota + " es un sobresaliente")
 }
-
 
 
 
