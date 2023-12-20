@@ -69,14 +69,14 @@ for (let i = 0; i < valoresArray.length; i++) {
 }
 
 // 4. Calcular el mayor y menor valor
-let maximo = Math.max(...valoresArray);
-let minimo = Math.min(...valoresArray);
+let maximo = Math.max(valoresArray);
+let minimo = Math.min(valoresArray);
 
 // 5. Calcular la media de los valores
-let media = suma / valoresArray.length;
+let media = sumar / valoresArray.length;
 
 // 6. Mostrar los resultados
-alert("Suma de los valores: " + suma);
+alert("Suma de los valores: " + sumar);
 alert("Mayor valor: " + maximo);
 alert("Menor valor: " + minimo);
 alert("Media de los valores: " + media);
