@@ -31,9 +31,66 @@ do {
 */
 
 /*Ejercicio 2 */
-let numDecimal1 = prompt("Introduce un numero decimal");
-let numDecimal2 = prompt("Introduce un numero decimal");
 
+  // Solicitamos al usuario ingresar el primer número decimal
 
+/*   let a, b;
+  [a,b]
+
+  do {
+    a = prompt("Ingrese el primer número decimal:");
+    a = parseInt(a);
+
+    // Verificamos si el valor es un número válido
+    if (isNaN(a)) {
+      alert("Por favor, ingrese un número válido.");
+    }
+  } while (isNaN(a));
+
+  do {
+    b = prompt("Ingrese el segundo número decimal:");
+    b = parseInt(b);
+
+    // Verificamos si el valor es un número válido
+    if (isNaN(b)) {
+      alert("Por favor, ingrese un número válido.");
+    }
+  } while (isNaN(b));
+
+  let suma = a + b;
+
+  // Convertimos el resultado a binario y hexadecimal
+  let sumaBinario = suma.toString(2);
+  let sumaHexadecimal = suma.toString(16);
+
+  // Mostramos los resultados
+  alert(`Resultado de la suma:
+    Decimal: ${suma}
+    Binario: ${sumaBinario}
+    Hexadecimal: ${sumaHexadecimal}`); */
 
 /*Ejercicio 3 */
+
+
+let entrada1 = "AJjads 2h3iShJasrn aSfd 1f3t f 983d "
+let entrada2 = "ads"
+
+if(entrada1.substring(entrada2)){
+    alert("La segunda cadena es subcadena de la primera")
+} else {
+    alert("La segunda cadena no es subcadena de la primera")
+}
+
+alert("La cadena 1 tiene " + entrada1.length + " carácteres " + " y la segunda tiene " + entrada2.length + " carácteres");
+
+let vocales = ['a', 'e', 'i', 'o', 'u'];
+
+for (let vocal of vocales) {
+    entrada1 = entrada1.split(vocal).join(vocal.toUpperCase());
+}
+
+if (entrada1.length > 5) {
+    alert(entrada1.substring(0, 5) + "...");
+} else {
+    alert(entrada1);
+}
