@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(240, 240, 240);
+}
+
+.contenido {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    
+}
+
+input {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(228, 228, 228);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+#btnrojo{
+    box-shadow: 0 0 20px 0px red;
+    color:#ff3232;
+}
+
+#btnverde{
+    box-shadow: 0 0 20px 0px rgb(8, 199, 24);
+    color:rgb(3, 148, 27);
+}
+
+#btnazul{
+    box-shadow: 0 0 20px 0px #0066ff;
+    color:rgb(2, 69, 145);
+}
+
+#btnamarillo{
+    box-shadow: 0 0 20px 0px #EECB03;
+    color:#d8bf33;
+}
+
+#btnmorado{
+    box-shadow: 0 0 20px 0px #6903ee;
+    color:#6903ee;
+}
+
+#btnreset{
+    box-shadow: 0 0 20px 0px #333136;
+    color:#131313;
+}
+
+
+.box {
+    width: 550px;
+    height: 350px;
+    border: 3px groove rgb(0, 0, 0);
+    background: #ffffff;
+}

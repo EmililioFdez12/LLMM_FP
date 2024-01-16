@@ -69,15 +69,16 @@ alert(`Resultado de la suma:
     Binario: ${sumaBinario}
     Hexadecimal: ${sumaHexadecimal}`);
 
+
 /*Ejercicio 4 */
 
 let entrada1 = prompt("Introduzca una cadena de texto")
 let entrada2 = prompt("Introduzca otra cadena de texto")
 
-if (entrada1.substring(entrada2)) {
-  alert("La segunda cadena es subcadena de la primera")
+if (entrada1.includes(entrada2)) {
+  alert("La segunda cadena es subcadena de la primera");
 } else {
-  alert("La segunda cadena no es subcadena de la primera")
+  alert("La segunda cadena no es subcadena de la primera");
 }
 
 alert("La cadena 1 tiene " + entrada1.length + " carácteres " + " y la segunda tiene " + entrada2.length + " carácteres");

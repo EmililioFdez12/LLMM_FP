@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cambiar colores de un DIV</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+</head>
+<body>
+    <p id="miParrafo">Hola</p>
+    <div class="contenido">  
+        <section class="botones">
+            <input type="button" value="rojo" id="btnrojo" onclick="setColorRojo()" onmouseover="changeColor(this,'#FF786E','white')" onmouseout="changeColorReset(this)">
+            <input type="button" value="verde" id="btnverde" onclick="setColorVerde()" onmouseover="changeColor(this,'#84ff6e','white')" onmouseout="changeColorReset(this)">
+            <input type="button" value="azul" id="btnazul" onclick="setColorAzul()" onmouseover="changeColor(this,'#6ed8ff','white')" onmouseout="changeColorReset(this)">
+            <input type="button" value="amarillo" id="btnamarillo" onclick="setColorAmarillo()" onmouseover="changeColor(this,'#F4FA4B','white')" onmouseout="changeColorReset(this)">
+            <!-- Color añadido -->
+            <input type="button" value="morado" id="btnmorado" onclick="setColorMorado()" onmouseover="changeColor(this,'violet','white')" onmouseout="changeColorReset(this)">
+            <!-- Color reset -->
+            <input type="button" value="reset" id="btnreset" onclick="setColorReset()" onmouseover="changeColor(this,'#1C1C1C','white')" onmouseout="changeColorReset(this)">
+        </section>
+        <div class="box">
+        </div>
+    </div>
+    <script src="js/changecolor.js"></script>
+</body>
+</html>
