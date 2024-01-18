@@ -15,10 +15,10 @@ let contadorImagen = 2;
 // Bucle para que puedas cambiar de imagen siempreF
 function cambiarImagen() {
   if ((contadorImagen % 2) == 0) {
-    document.getElementById('fotoCambiante').src = ('images/somiel.png');
+    document.getElementById('fotoCambiante').src = ('images/rioLandscape.jpg');
     contadorImagen++;
   } else {
-    document.getElementById('fotoCambiante').src = ('images/frozono.jpg');
+    document.getElementById('fotoCambiante').src = ('images/greenLandscape.jpg');
     contadorImagen++;
   }
 }
