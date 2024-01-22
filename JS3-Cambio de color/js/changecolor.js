@@ -128,24 +128,36 @@ setInterval(preguntaTiempo,180000);
 // Cuadro en la página que indique su ancho y su alto y si este cambia, que esos
 //cambios se vean reflejados
 
-/*   let cuadro = document.getElementById('cuadroMedidas');
-
-  function actualizarCuadro(){
-    // Actualiza el cuadro cada vez que se cambio la altura o el ancho
+  let cuadro = document.getElementById('cuadrado');
+ 
+  function actualizarCuadro() {
+    // Actualiza el cuadro cada vez que se cambia la altura o el ancho
     let ancho = cuadro.clientWidth;
     let alto = cuadro.clientHeight;
 
+    cuadro = document.getElementById('contenedor');
     cuadro.innerHTML = ('Ancho ' + ancho + 'px, Alto ' + alto + 'px');
-  }
+}
+
+actualizarCuadro();
 
 
-  actualizarCuadro();
+window.addEventListener('resize', function () {
+  cuadro = document.getElementById('cuadrado');
+    actualizarCuadro();
+});
 
-  window.addEventListener('resize',function() {
-  actualizarCuadro();
-  }) */
+
+//Boton que al pulsarlo desaparezca
+
+let btnFantasma = document.getElementById('btnFantasma');
+
+btnFantasma.addEventListener('click',function(){
+  btnFantasma.style.display = 'none';
+})
 
 
+  // Modo oscuro
   function toggleDarkMode() {
     let body = document.body;
     // Se seleccionan todos los input, de tipo boton.
@@ -155,3 +167,6 @@ setInterval(preguntaTiempo,180000);
         boton.classList.toggle("dark-input");
     });
 }
+
+
+
