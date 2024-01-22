@@ -121,4 +121,37 @@ function preguntaTiempo(){
 // 1 intervalo es = 1 milisegundo
 // Por lo tanto 3 minutos = 180.000
 // Pregunta cada 3 minutos
-setInterval(preguntaTiempo,180000)
+setInterval(preguntaTiempo,180000);
+
+
+
+// Cuadro en la página que indique su ancho y su alto y si este cambia, que esos
+//cambios se vean reflejados
+
+/*   let cuadro = document.getElementById('cuadroMedidas');
+
+  function actualizarCuadro(){
+    // Actualiza el cuadro cada vez que se cambio la altura o el ancho
+    let ancho = cuadro.clientWidth;
+    let alto = cuadro.clientHeight;
+
+    cuadro.innerHTML = ('Ancho ' + ancho + 'px, Alto ' + alto + 'px');
+  }
+
+
+  actualizarCuadro();
+
+  window.addEventListener('resize',function() {
+  actualizarCuadro();
+  }) */
+
+
+  function toggleDarkMode() {
+    let body = document.body;
+    // Se seleccionan todos los input, de tipo boton.
+    let botones = document.querySelectorAll('input[type="button"]');
+    body.classList.toggle("dark-mode");
+    botones.forEach(boton => {
+        boton.classList.toggle("dark-input");
+    });
+}
