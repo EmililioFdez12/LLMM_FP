@@ -138,12 +138,13 @@ input {
 
 #btnFantasma{
   width: 20vw;
-  height: 35vh;
+  height: 40vh;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 90vh;
+  margin-top: -6vh;
 }
 
 
