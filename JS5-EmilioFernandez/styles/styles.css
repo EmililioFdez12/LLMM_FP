@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("../images/bmw.png");
+    background-size: cover;
+
+}
+.fondo{
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:5px solid black;
+    width: 50vw;
+    
+    
+}
+
+.texto{
+    margin-top: 2.5vh;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20vh;
+ 
+}

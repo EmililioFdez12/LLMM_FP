@@ -59,7 +59,7 @@ function setColorAmarillo() {
   if (btnAmarillo.value == "amarillo") {
     box.style.background = "#F4FA4B";
     tit.style.color = "#F4FA4B";
-    
+
   }
 }
 
@@ -111,9 +111,9 @@ actualizarReloj();
 
 
 
-function preguntaTiempo(){
+function preguntaTiempo() {
   let confirmar = confirm("¿Desea salir de la página?");
-  if(confirmar){
+  if (confirmar) {
     window.location.href = 'https://www.formula1.com';
   }
 }
@@ -121,22 +121,22 @@ function preguntaTiempo(){
 // 1 intervalo es = 1 milisegundo
 // Por lo tanto 3 minutos = 180.000
 // Pregunta cada 3 minutos
-setInterval(preguntaTiempo,180000);
+setInterval(preguntaTiempo, 180000);
 
 
 
 // Cuadro en la página que indique su ancho y su alto y si este cambia, que esos
 //cambios se vean reflejados
 
-  let cuadro = document.getElementById('cuadrado');
- 
-  function actualizarCuadro() {
-    // Actualiza el cuadro cada vez que se cambia la altura o el ancho
-    let ancho = cuadro.clientWidth;
-    let alto = cuadro.clientHeight;
+let cuadro = document.getElementById('cuadrado');
 
-    cuadro = document.getElementById('contenedor');
-    cuadro.innerHTML = ('Ancho ' + ancho + 'px, Alto ' + alto + 'px');
+function actualizarCuadro() {
+  // Actualiza el cuadro cada vez que se cambia la altura o el ancho
+  let ancho = cuadro.clientWidth;
+  let alto = cuadro.clientHeight;
+
+  cuadro = document.getElementById('contenedor');
+  cuadro.innerHTML = ('Ancho ' + ancho + 'px, Alto ' + alto + 'px');
 }
 
 actualizarCuadro();
@@ -144,29 +144,70 @@ actualizarCuadro();
 
 window.addEventListener('resize', function () {
   cuadro = document.getElementById('cuadrado');
-    actualizarCuadro();
+  actualizarCuadro();
 });
 
 
-//Boton que al pulsarlo desaparezca
+//Ej 5 Boton que al pulsarlo desaparezca
 
-let btnFantasma = document.getElementById('btnFantasma');
+let btnFantasma = document.getElementById('boo');
 
-btnFantasma.addEventListener('click',function(){
+btnFantasma.addEventListener('click', function () {
   btnFantasma.style.display = 'none';
 })
 
 
-  // Modo oscuro
-  function toggleDarkMode() {
-    let body = document.body;
-    // Se seleccionan todos los input, de tipo boton.
-    let botones = document.querySelectorAll('input[type="button"]');
-    body.classList.toggle("dark-mode");
-    botones.forEach(boton => {
-        boton.classList.toggle("dark-input");
-    });
+// Ej 8 Modo oscuro
+function toggleDarkMode() {
+  let body = document.body;
+  // Se seleccionan todos los input, de tipo boton.
+  let botones = document.querySelectorAll('input[type="button"]');
+  body.classList.toggle("dark-mode");
+  botones.forEach(boton => {
+    boton.classList.toggle("dark-input");
+  });
 }
 
 
+// Ejercicio 6
+document.getElementById('textoDesaparecer').innerHTML = ('Texto que desaparece')
+document.getElementById('textoDesaparecer').style.color = ('#6ed8ff');
+document.getElementById('textoDesaparecer').style.fontSize = ('8vh');
+document.getElementById('textoDesaparecer').style.fontFamily = ('Bebas Neue');
 
+
+let borrarTexto = document.getElementById('btnBorraTexto');
+let contadorClicks = 2;
+
+borrarTexto.addEventListener('click', function () {
+
+  if (contadorClicks % 2 == 0) {
+    textoDesaparecer.style.display = 'none';
+    contadorClicks++;
+  } else {
+    textoDesaparecer.style.display = 'inline'
+    contadorClicks++;
+  }
+
+})
+
+// Ejercicio 7
+
+let alerta1 = document.getElementById('btnTexto1');
+let alerta2 = document.getElementById('btnTexto2');
+
+alerta1.addEventListener('click', function(){
+  alert('Buenos dias')
+})
+
+ let contadorClicks2 = 2;
+  alerta2.addEventListener('click', function(){
+  if(contadorClicks2 % 2 == 0){
+    alert('Hola')
+    alert('Adios')
+    contadorClicks2++;
+  } else {
+    alert('Hola')
+  }
+
+})
