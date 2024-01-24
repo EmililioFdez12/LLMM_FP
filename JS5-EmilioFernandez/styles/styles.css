@@ -1,35 +1,74 @@
-*{
+* {
     margin: 0;
-}
-
-.contenedor{
+  }
+  
+  .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    flex-direction: column;
+    width: 98.3vw;
     height: 100vh;
-    background-image:url("../images/bmw.png");
-    background-size: cover;
-
-}
-.fondo{
-    width: 100vw;
+    position: relative;
+  }
+  
+  .foto {
     height: 100vh;
-}
-
-.titulo{
+    width: 100vw;
+  }
+  
+  .button-container {
+    position: absolute;
+    top:50vh;
+    right: 100.5vh; 
+  }
+  
+  button {
+    width: 3vw;
+    height: 6vh;
+    background-color: #696969;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 0 5px 1px #000000;
+    z-index: 100;
+    border: #ffffff;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #ff1f1f;
+  }
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    margin-bottom: 25%;
+    border-bottom: 15px solid white;
+    transform: rotate(180deg);
+  }
+  
+  .contenedor2 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border:5px solid black;
-    width: 50vw;
-    
-    
-}
-
-.texto{
-    margin-top: 2.5vh;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20vh;
- 
-}
+    justify-content: center;
+    width: 98.3vw;
+    height: 100vh;
+    border: 2px solid red;
+  }
+  
+  #galeria {
+    border: 2px solid black;
+    width: 20vw;
+  }
+  

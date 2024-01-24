@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -10,16 +10,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
   <div class="contenedor">
-  <div class="titulo">
-    <div class="texto">CAR GALLERY</div>
+    <div class="titulo">
+      <img class="foto" src="images/portada.png">
+      <a href="#galeria" >
+      <div class="button-container">
+        <button>
+          <div class="arrow-up"></div>
+        </button>
+      </a>
+      </div>
+    </div>
   </div>
-</div>
-  <script src="js/changecolor.js"></script>
+
+  <div class="contenedor2">
+    <div id="galeria">
+      aqui va la galeria
+    </div>
+  </div>
+  <!-- Incluye la biblioteca GSAP y el script.js al final del cuerpo -->
+  <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+  <script src="js/js.js"></script>
 </body>
 
 </html>
