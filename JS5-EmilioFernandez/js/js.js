@@ -19,3 +19,40 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+/* 
+  window.onload = function () { */
+    const IMAGENES = [
+        'images/f40.jpg',
+        'images/toyota_mr2.jpg',
+        'images/porsche911.jpg',
+        'images/audi.jpg',
+        'images/gti.jpg',
+        'images/lambo.jpg',
+        'images/civic.jpg'
+    ];
+
+    let indiceImagenActual = 0;
+
+    function avanzarImagen() {
+      indiceImagenActual++;
+      if (indiceImagenActual >= IMAGENES.length) {
+        indiceImagenActual = 0;
+      }
+      document.getElementById("fotos").src = IMAGENES[indiceImagenActual];
+    }
+
+    function retrocederImagen() {
+      indiceImagenActual--;
+      if (indiceImagenActual < 0) {
+        indiceImagenActual = IMAGENES.length - 1;
+      }
+
+      if (indiceImagenActual >= IMAGENES.length) {
+        indiceImagenActual = 0;
+      }
+      document.getElementById("fotos").src = IMAGENES[indiceImagenActual];
+    }
+    
+    document.getElementById("avanzar").addEventListener("click", avanzarImagen);
+    document.getElementById("retroceder").addEventListener("click", retrocederImagen);

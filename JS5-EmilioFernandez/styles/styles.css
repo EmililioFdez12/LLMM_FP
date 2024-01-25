@@ -1,74 +1,164 @@
 * {
-    margin: 0;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 98vw;
+  height: 100vh;
+  position: relative;
+}
+
+.foto {
+  height: 100vh;
+  width: 100vw;
+}
+
+.button-container {
+  position: absolute;
+  top: 50vh;
+  right: 104vh;
+}
+
+.button {
+  width: 3vw;
+  height: 6vh;
+  background-color: #696969;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 5px 1px #000000;
+  z-index: 100;
+  border: #ffffff;
+  transition: 0.5s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #ff1f1f;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35%;
+  margin-bottom: 25%;
+  border-bottom: 15px solid white;
+  transform: rotate(180deg);
+}
+
+.contenedor2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: row;
+  width: 98vw;
+  height: 100vh;
+}
+
+#galeria {
+  border: 0.4vh outset rgb(133, 133, 133);
+  box-shadow: black 0 0 20px 1px;
+  width: 40vw;
+  height: 90vh;
+}
+
+#fotos {
+  width: 40vw;
+  height: 90vh;
+}
+
+/* Boton galería */
+.button2 {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  border: 3px solid rgb(255, 239, 94);
+  background-color: rgb(255, 239, 94);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+  border-radius: 5px;
+}
+
+.text2 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+.arrow2 path {
+  fill: rgb(19, 19, 19);
+}
+
+.button2:hover .arrow2 {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-8px);
+    opacity: 0;
   }
-  
-  .contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 98.3vw;
-    height: 100vh;
-    position: relative;
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
-  
-  .foto {
-    height: 100vh;
-    width: 100vw;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
   }
-  
-  .button-container {
-    position: absolute;
-    top:50vh;
-    right: 100.5vh; 
+
+  100% {
+    transform: translateX(8px);
+    opacity: 1;
   }
-  
-  button {
-    width: 3vw;
-    height: 6vh;
-    background-color: #696969;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 0 5px 1px #000000;
-    z-index: 100;
-    border: #ffffff;
-    transition: 0.5s;
-  }
-  
-  button:hover {
-    transform: scale(1.1);
-  }
-  
-  button:active {
-    background-color: #ff1f1f;
-  }
-  
-  .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35%;
-    margin-bottom: 25%;
-    border-bottom: 15px solid white;
-    transform: rotate(180deg);
-  }
-  
-  .contenedor2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 98.3vw;
-    height: 100vh;
-    border: 2px solid red;
-  }
-  
-  #galeria {
-    border: 2px solid black;
-    width: 20vw;
-  }
-  
+}
+
+.button2:active {
+  transform: scale(0.97);
+}
+.button2:hover .arrow2 {
+  transform: rotate(180deg);
+  animation: slide-in-right 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+#avanzar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20vh;
+}
+
+#retroceder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20vh;
+}
+
