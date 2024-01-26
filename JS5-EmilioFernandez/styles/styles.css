@@ -67,16 +67,29 @@
   height: 100vh;
 }
 
-#galeria {
+.galeria {
   border: 0.4vh outset rgb(133, 133, 133);
   box-shadow: black 0 0 20px 1px;
   width: 40vw;
-  height: 90vh;
+  height: auto;
+  margin-inline:auto;
+  overflow: hidden;
+}
+
+.galeria img{
+  width: 100%;
+  height: auto;
+}
+
+.galeria-inner{
+  display: flex;
+  transition: trasform 1s ease-in-out;
+  padding-left: 0;
 }
 
 #fotos {
   width: 40vw;
-  height: 90vh;
+  height: auto;
 }
 
 /* Boton galería */
@@ -148,14 +161,14 @@
 }
 
 
-#avanzar{
+.avanzar{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 20vh;
 }
 
-#retroceder{
+.retroceder{
   display: flex;
   justify-content: center;
   align-items: center;

@@ -20,8 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-/* 
-  window.onload = function () { */
+
     const IMAGENES = [
         'images/f40.jpg',
         'images/toyota_mr2.jpg',
@@ -32,13 +31,80 @@ document.addEventListener('DOMContentLoaded', function() {
         'images/civic.jpg'
     ];
 
-    let indiceImagenActual = 0;
+    document.addEventListener('DOMcontentLoaded',()=>{
+      const inner = document.querySelector('.galeria-inner');
+      const prev = document.querySelector('.retroceder');
+      const next = document.querySelector('.avanzar');
+      const imgWidth = document.querySelector('img').clientWidth;
+
+      let currentIndex = 0;
+
+      prev.addEventListener('click',(event)=>{
+        event.preventDefault();
+        currentIndex = Math.max(currentIndex - 1 , 0);
+
+        inner.style.transform = `translateX(-${currentIndex * imgWidth}px)`
+      })
+
+      next.addEventListener('click',(event)=>{
+        event.preventDefault();
+        currentIndex = Math.min(currentIndex + 1 , inner.childElementCount - 1);
+
+        inner.style.transform = `translateX(-${currentIndex * imgWidth}px)`
+      })
+
+    })
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* let indiceImagenActual = 0;
 
     function avanzarImagen() {
       indiceImagenActual++;
       if (indiceImagenActual >= IMAGENES.length) {
         indiceImagenActual = 0;
       }
+      inner.style.transform = `translateX(-${indiceImagenActual * imgWidth}px)`;
       document.getElementById("fotos").src = IMAGENES[indiceImagenActual];
     }
 
@@ -55,4 +121,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     document.getElementById("avanzar").addEventListener("click", avanzarImagen);
-    document.getElementById("retroceder").addEventListener("click", retrocederImagen);
+    document.getElementById("retroceder").addEventListener("click", retrocederImagen); */
