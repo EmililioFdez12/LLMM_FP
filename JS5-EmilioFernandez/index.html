@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cambiar colores de un DIV</title>
+  <title>CAR GALLERY</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <div class="titulo">
       <img class="foto" src="images/portada.png">
       <div class="button-container">
-        <a href="#galeria">
+        <a href="#contenedor2"> <!-- Corregido el href para apuntar al contenedor2 -->
           <button class="button">
             <div class="arrow-up"></div>
           </button>
@@ -26,20 +26,21 @@
     </div>
   </div>
 
-  <div class="contenedor2">
+  <div id="contenedor2">
     <div class="carousel">
       <ul class="carousel-inner">
-        <img id="fotos" src="images/f40.jpg" alt="hola">
-        <img id="fotos" src="images/audi.jpg">
-        <img id="fotos" src="images/civic.jpg">
-        <img id="fotos" src="images/gti.jpg">
-        <img id="fotos" src="images/lambo.jpg">
-        <img id="fotos" src="images/porsche911.jpg">
-        <img id="fotos" src="images/toyota_mr2.jpg">
+        <img class="fotos" src="images/f40.jpg" alt="hola"> <!-- Modificado el ID a class para ser único -->
+        <img class="fotos" src="images/audi.jpg">
+        <img class="fotos" src="images/civic.jpg">
+        <img class="fotos" src="images/gti.jpg">
+        <img class="fotos" src="images/lambo.jpg">
+        <img class="fotos" src="images/porsche911.jpg">
+        <img class="fotos" src="images/toyota_mr2.jpg">
       </ul>
     </div>
-    <a href="#" class="carousel-prev">&#10094;</a>
-    <a href="#" class="carousel-next">&#10095;</a>
+    <a href="" class="carousel-prev">&#10094;</a>
+    <a href="" class="carousel-next">&#10095;</a>
+  </div>
 
   <!-- Incluye la biblioteca GSAP y el script.js al final del cuerpo -->
   <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>

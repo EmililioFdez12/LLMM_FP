@@ -69,7 +69,7 @@ for (let i = 0; i < valoresArray.length; i++) {
 }
 
 // 4. Calcular el mayor y menor valor
-let maximo = Math.max(valoresArray);
+let maximo = Math.max(valoresArray); // corregir
 let minimo = Math.min(valoresArray);
 
 // 5. Calcular la media de los valores

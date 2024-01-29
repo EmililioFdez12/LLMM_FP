@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-
+  
     document.addEventListener('DOMContentLoaded', () => {
       const inner = document.querySelector('.carousel-inner');
       const prev = document.querySelector('.carousel-prev');
