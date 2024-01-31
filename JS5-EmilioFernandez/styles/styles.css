@@ -15,7 +15,7 @@ body{
       #ffffff 50%,
       #909090 50%,
       #909090 75%,
-      #909090 75%,
+      #909090  75%,
       #ffffff
     );
     background-size: 60px 60px;
@@ -50,7 +50,6 @@ body{
       background-size: 60px 60px;
     
       animation: move 7s linear infinite;
-      transition: background-color 0.5s ease
     }
     
     @keyframes move {
@@ -68,7 +67,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 98vw;
+  width: 97.8vw;
   height: 100vh;
   position: relative;
 }
@@ -133,15 +132,9 @@ body{
   width: 35vw;
   margin-inline:auto;
   overflow: hidden;
-
-}
-
-section{
   border:5px solid #151515;
-  height: 76.2vh;
-  border-radius: 2px;
-  box-shadow: 0 0 10px 1px;
-  margin-bottom: 2vh;
+  border-radius: 0.5vh;
+  margin-bottom: 1vh;
 }
 
 .dark-borderFoto{

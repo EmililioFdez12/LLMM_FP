@@ -95,7 +95,7 @@ function modoOscuro() {
   let body = document.body;
   let botonSvg = document.getElementById('botonSvg');
   let botonSvg2 = document.getElementById('botonSvg2');
-  let carousel = document.querySelector('section')
+  let carousel = document.querySelector('.carousel')
   let prev = document.querySelector('.carousel-prev')
   let next = document.querySelector('.carousel-next')
   let cuadro = document.querySelector('.cuadroReproductor')
@@ -110,6 +110,5 @@ function modoOscuro() {
   next.classList.toggle("dark-nextPrev");
   cuadro.classList.toggle("dark-reproductor");
 }
-
 
 
