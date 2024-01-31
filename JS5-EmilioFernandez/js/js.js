@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Escucha el evento de clic en el enlace
-  // anchor en <a></a>
+  // Check for stored dark mode preference
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (isDarkMode) {
+    modoOscuro(); // Apply dark mode if preference is set
+  }
+
+  // Escucha el evento de clic en el enlace anchor en <a></a>
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       // previene que haga la accion default de los enlaces(que vaya directamente al enlace)
@@ -18,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const inner = document.querySelector('.carousel-inner');
@@ -40,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     inner.style.transform = `translateX(-${currentIndex * imgWidth}px)`;
   });
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const inner = document.querySelector('.carousel-inner');
@@ -84,31 +87,79 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex++;
 
     // Velocidad de la animación
-      timer = setTimeout(showNextImage, 1500);
-    
+    timer = setTimeout(showNextImage, 1500);
+
   }
 });
 
-
-// Modo oscuro
-function modoOscuro() {
-  let body = document.body;
-  let botonSvg = document.getElementById('botonSvg');
-  let botonSvg2 = document.getElementById('botonSvg2');
-  let carousel = document.querySelector('.carousel')
-  let prev = document.querySelector('.carousel-prev')
-  let next = document.querySelector('.carousel-next')
-  let cuadro = document.querySelector('.cuadroReproductor')
-
-
-  // Toggle de clases para el modo oscuro en diferentes elementos
+// Function to toggle dark mode
+function toggleDarkMode() {
+  const body = document.body;
+  // Toggle dark mode class on body
   body.classList.toggle("body-darkmode");
-  botonSvg.classList.toggle("dark-input");
-  botonSvg2.classList.toggle("dark-input");
-  carousel.classList.toggle("dark-borderFoto");
-  prev.classList.toggle("dark-nextPrev");
-  next.classList.toggle("dark-nextPrev");
-  cuadro.classList.toggle("dark-reproductor");
+
+  // Store dark mode preference
+  localStorage.setItem('darkMode', body.classList.contains("body-darkmode"));
+
+  // Apply dark mode if body has 'body-darkmode' class
+  if (body.classList.contains("body-darkmode")) {
+    applyDarkModeStyles();
+  } else {
+    removeDarkModeStyles();
+  }
 }
 
+// Apply dark mode styles
+function applyDarkModeStyles() {
+  let botonSvg = document.getElementById('botonSvg');
+  let botonSvg2 = document.getElementById('botonSvg2');
+  let carousel = document.querySelector('.carousel');
+  let prev = document.querySelector('.carousel-prev');
+  let next = document.querySelector('.carousel-next');
+  let cuadro = document.querySelector('.cuadroReproductor');
 
+  botonSvg.classList.add("dark-input");
+  botonSvg2.classList.add("dark-input");
+  carousel.classList.add("dark-borderFoto");
+  prev.classList.add("dark-nextPrev");
+  next.classList.add("dark-nextPrev");
+  cuadro.classList.add("dark-reproductor");
+}
+
+// Remove dark mode styles
+function removeDarkModeStyles() {
+  let botonSvg = document.getElementById('botonSvg');
+  let botonSvg2 = document.getElementById('botonSvg2');
+  let carousel = document.querySelector('.carousel');
+  let prev = document.querySelector('.carousel-prev');
+  let next = document.querySelector('.carousel-next');
+  let cuadro = document.querySelector('.cuadroReproductor');
+
+  botonSvg.classList.remove("dark-input");
+  botonSvg2.classList.remove("dark-input");
+  carousel.classList.remove("dark-borderFoto");
+  prev.classList.remove("dark-nextPrev");
+  next.classList.remove("dark-nextPrev");
+  cuadro.classList.remove("dark-reproductor");
+}
+
+// Function to initialize dark mode preference on page load
+document.addEventListener("DOMContentLoaded", function() {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+
+  // Retrieve dark mode preference from localStorage
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+  // Update toggle button based on preference
+  darkModeToggle.checked = isDarkMode;
+
+  // Apply dark mode if preference is true
+  if (isDarkMode) {
+    toggleDarkMode();
+  }
+});
+
+// Function called when dark mode toggle is clicked
+function modoOscuroActivacion() {
+  toggleDarkMode();
+}

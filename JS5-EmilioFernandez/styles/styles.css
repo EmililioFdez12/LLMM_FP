@@ -10,15 +10,15 @@ body{
     background: #121212; 
     background: linear-gradient(
       135deg,
-      #909090 25%,
-      #909090 25%,
+      #808080 25%,
+      #808080 25%,
       #ffffff 50%,
-      #909090 50%,
-      #909090 75%,
-      #909090  75%,
+      #808080 50%,
+      #808080 75%,
+      #808080 75%,
       #ffffff
     );
-    background-size: 60px 60px;
+    background-size: 120px 120px;
   
    animation: move 7s linear infinite;
   }
@@ -47,7 +47,7 @@ body{
         #151515 75%,
         #303030
       );
-      background-size: 60px 60px;
+      background-size: 120px 120px;
     
       animation: move 7s linear infinite;
     }
