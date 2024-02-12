@@ -1,66 +1,64 @@
 * {
-  margin: 0;  
+  margin: 0;
 }
 
-body{
+body {
 
   /*Patron con animacion*/
-    width: 100%;
-    height: 100%;   
-    background: #121212; 
-    background: linear-gradient(
-      135deg,
+  width: 100%;
+  height: 100%;
+  background: #121212;
+  background: linear-gradient(135deg,
       #808080 25%,
       #808080 25%,
       #ffffff 50%,
       #808080 50%,
       #808080 75%,
       #808080 75%,
-      #ffffff
-    );
-    background-size: 120px 120px;
-  
-   animation: move 7s linear infinite;
-  }
-  
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 60px 60px;
-    }
+      #ffffff);
+  background-size: 120px 120px;
+
+  animation: move 7s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
   }
 
-  .body-darkmode{
-    /*Patron con animacion*/
-      width: 100%;
-      height: 100%;   
-      background: #2c2c2c; 
-      background: linear-gradient(
-        135deg,
-        #151515 25%,
-        #151515 25%,
-        #303030 50%,
-        #151515 50%,
-        #151515 75%,
-        #151515 75%,
-        #303030
-      );
-      background-size: 120px 120px;
-    
-      animation: move 7s linear infinite;
-    }
-    
-    @keyframes move {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 60px 60px;
-      }
-    }
-  
+  100% {
+    background-position: 60px 60px;
+  }
+}
+
+.body-darkmode {
+  /*Patron con animacion*/
+  width: 100%;
+  height: 100%;
+  background: #2c2c2c;
+  background: linear-gradient(135deg,
+      #151515 25%,
+      #151515 25%,
+      #303030 50%,
+      #151515 50%,
+      #151515 75%,
+      #151515 75%,
+      #303030);
+  background-size: 120px 120px;
+
+  animation: move 7s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 60px;
+  }
+}
+
 
 .contenedor {
   display: flex;
@@ -127,25 +125,25 @@ body{
   height: 100vh;
 }
 
-.carousel{
+.carousel {
   position: relative;
   width: 35vw;
-  margin-inline:auto;
+  margin-inline: auto;
   overflow: hidden;
-  border:5px solid #151515;
+  border: 5px solid #151515;
   border-radius: 0.5vh;
   margin-bottom: 1vh;
 }
 
-.dark-borderFoto{
-  border:5px solid #dddddd;
+.dark-borderFoto {
+  border: 5px solid #dddddd;
   box-shadow: #dddddd 0 0 10px 1px;
 }
 
-.carousel-inner{
+.carousel-inner {
   display: flex;
   transition: transform 1s ease;
-  padding-left:0;
+  padding-left: 0;
 }
 
 .carousel img {
@@ -154,14 +152,14 @@ body{
 }
 
 .carousel-prev,
-.carousel-next{
+.carousel-next {
   position: absolute;
-  top:140%;
+  top: 140%;
   transform: translateX(-800%);
   font-size: 30px;
   width: 30px;
   height: 30px;
-  color:white;
+  color: white;
   text-decoration: none;
   background-color: #151515;
   box-shadow: 0 0 10px 1px #151515;
@@ -173,14 +171,14 @@ body{
 }
 
 .carousel-prev,
-.carousel-next{
+.carousel-next {
   position: absolute;
-  top:140%;
+  top: 140%;
   transform: translateX(-800%);
   font-size: 30px;
   width: 30px;
   height: 30px;
-  color:white;
+  color: white;
   text-decoration: none;
   background-color: #151515;
   box-shadow: 0 0 10px 1px #151515;
@@ -191,50 +189,50 @@ body{
   justify-content: center;
 }
 
-.dark-nextPrev{
+.dark-nextPrev {
   background-color: #dddddd;
   box-shadow: 0 0 10px 1px #c9c9c9;
-  color:#151515;
+  color: #151515;
 }
 
 
-.carousel-next{
+.carousel-next {
   transform: translateX(800%);
 }
 
 #reanudar,
-#parar{
-  margin:1vh;
-  height: 8vh;  
+#parar {
+  margin: 1vh;
+  height: 8vh;
 }
 
 #reanudar:hover,
-#parar:hover{
+#parar:hover {
   transform: scale(1.1);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.cuadroReproductor{
+.cuadroReproductor {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  border:8px double #151515;
+  border: 8px double #151515;
   margin-bottom: 1vh;
 }
 
-.dark-reproductor{
+.dark-reproductor {
   display: flex;
   flex-direction: row;
-  border:8px double #dddddd;
+  border: 8px double #dddddd;
 }
 
 
-.dark-input{
-  fill:#dddddd;
+.dark-input {
+  fill: #dddddd;
 }
 
 
-/*Boton modo oscuro*/
+/*Boton modo oscuro de UIVERSE.IO*/
 .switch {
   display: block;
   --width-of-switch: 5em;
@@ -246,8 +244,8 @@ body{
   position: relative;
   width: var(--width-of-switch);
   height: var(--height-of-switch);
-  border:3px solid black;
-  border-radius:25px;
+  border: 3px solid black;
+  border-radius: 25px;
   margin: 1vh;
 }
 
@@ -274,23 +272,23 @@ body{
 .slider:before {
   position: absolute;
   content: "";
-  height: var(--size-of-icon,1.4em);
-  width: var(--size-of-icon,1.4em);
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
   border-radius: 20px;
-  left: var(--slider-offset,0.3em);
+  left: var(--slider-offset, 0.3em);
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
   ;
- transition: .4s;
+  transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #303136;
 }
 
-input:checked + .slider:before {
-  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+input:checked+.slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
   background: #303136;
   /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
   box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;

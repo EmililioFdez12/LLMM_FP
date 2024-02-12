@@ -1,107 +1,111 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Check for stored dark mode preference
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
-  if (isDarkMode) {
-    modoOscuro(); // Apply dark mode if preference is set
-  }
+// Escucha click en el enlace "anchor" en <a></a>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    // previene que haga la accion default de los enlaces(que vaya directamente al enlace)
+    e.preventDefault();
 
-  // Escucha el evento de clic en el enlace anchor en <a></a>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      // previene que haga la accion default de los enlaces(que vaya directamente al enlace)
-      e.preventDefault();
+    let targetId = this.getAttribute('href').substring(1); // Obtenemos el ID del elemento de destino eliminando el '#'
+    let targetElement = document.getElementById(targetId);
 
-      let targetId = this.getAttribute('href').substring(1); // substring para que no cuente el # del #galeria
-      let targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop,
-          behavior: 'smooth'
-        });
-      }
-    });
+    // Animacion
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth' // Aplicamos un desplazamiento suave
+      });
+    }
   });
 });
 
+
+// Carousel manual
 document.addEventListener('DOMContentLoaded', () => {
   const inner = document.querySelector('.carousel-inner');
   const prev = document.querySelector('.carousel-prev');
   const next = document.querySelector('.carousel-next');
-  const imgWidth = document.querySelector('.carousel-inner img').clientWidth;
+  const imgWidth = document.querySelector('.carousel-inner img').clientWidth; // Obtenemos el ancho de la imagen
 
   let currentIndex = 0;
 
+  // Listener para el botón prev
   prev.addEventListener('click', (event) => {
     event.preventDefault();
-    currentIndex = Math.max(currentIndex - 1, 0);
-    inner.style.transform = `translateX(-${currentIndex * imgWidth}px)`;
+    currentIndex = Math.max(currentIndex - 1, 0); // Aseguramos que currentIndex no sea menor que cero
+    inner.style.transform = `translateX(-${currentIndex * imgWidth}px)`; // Movemos el carrusel hacia la izquierda
   });
 
+  // Listener para el botón siguiente
   next.addEventListener('click', (event) => {
     event.preventDefault();
-    currentIndex = (currentIndex + 1) % inner.childElementCount;
-    inner.style.transform = `translateX(-${currentIndex * imgWidth}px)`;
+    currentIndex = (currentIndex + 1) % inner.childElementCount; // Avanzamos al siguiente índice o volvemos al primero
+    inner.style.transform = `translateX(-${currentIndex * imgWidth}px)`; // Movemos el carrusel hacia la derecha
   });
 });
 
+// Carousel con Reproductor
 document.addEventListener('DOMContentLoaded', () => {
   const inner = document.querySelector('.carousel-inner');
   const play = document.querySelector('#reanudar');
   const stop = document.querySelector('#parar');
-  const imgWidth = document.querySelector('.carousel-inner img').clientWidth;
-  const totalImages = inner.querySelectorAll('.fotos').length;
+  // Obtenemos el ancho de la imagen
+  const imgWidth = document.querySelector('.carousel-inner img').clientWidth; 
+  // Obtenemos el número total de imágenes
+  const totalImages = inner.querySelectorAll('.fotos').length; 
 
   let currentIndex = 0;
   let timer;
 
+  // Listener para el botón de reproducción
   play.addEventListener('click', (event) => {
     event.preventDefault();
+     // Inicia la reproducción automática
     autoplay();
   });
 
+  // Listener para el botón de pausa
   stop.addEventListener('click', (event) => {
     event.preventDefault();
-    clearTimeout(timer);
+    // Detiene la reproducción automática
+    clearTimeout(timer); 
   });
 
+  // Función para iniciar la reproducción automática
   function autoplay() {
-    // Vuelve a la primera imagen
-    currentIndex = 0;
-    showNextImage();
+    // Reinicia el índice a cero
+    currentIndex = 0; 
+    // Muestra la siguiente imagen
+    showNextImage(); 
   }
 
+  // Función para mostrar la siguiente imagen
   function showNextImage() {
-    // Vemos si esta en la ultima imagen
     if (currentIndex >= totalImages) {
-      // Si se pasa se resetea el timer
-      clearTimeout(timer);
+      // Detiene la reproducción si se alcanza la última imagen
+      clearTimeout(timer); 
       return;
     }
 
-    // Calculamos cuanto se tiene que "mover" la animacion
-    // El "-" esta porque si no va hacia el lado contrario
-    const translateValue = -currentIndex * imgWidth;
-    // Mostrar la imagen, en movimiento
-    inner.style.transform = `translateX(${translateValue}px)`;
-    currentIndex++;
+    // Calcula el valor de traslación para la animación
+    const translateValue = -currentIndex * imgWidth; 
+    // Aplica la animación
+    inner.style.transform = `translateX(${translateValue}px)`; 
+    currentIndex++; 
 
-    // Velocidad de la animación
+     // Tiempo entre imagen e imagen
     timer = setTimeout(showNextImage, 1500);
-
   }
 });
 
-// Function to toggle dark mode
+// Función para activar/desactivar el modo oscuro
 function toggleDarkMode() {
   const body = document.body;
-  // Toggle dark mode class on body
-  body.classList.toggle("body-darkmode");
+  // Alterna la clase para el modo oscuro en el body
+  body.classList.toggle("body-darkmode"); 
 
-  // Store dark mode preference
+  // Guarda el estado del modo oscuro en una "cookie"
   localStorage.setItem('darkMode', body.classList.contains("body-darkmode"));
 
-  // Apply dark mode if body has 'body-darkmode' class
+  // Aplica o elimina los estilos del modo oscuro según corresponda
   if (body.classList.contains("body-darkmode")) {
     applyDarkModeStyles();
   } else {
@@ -109,8 +113,9 @@ function toggleDarkMode() {
   }
 }
 
-// Apply dark mode styles
+// Aplica los estilos del modo oscuro
 function applyDarkModeStyles() {
+  // Selecciona los elementos y les añade las clases para el modo oscuro
   let botonSvg = document.getElementById('botonSvg');
   let botonSvg2 = document.getElementById('botonSvg2');
   let carousel = document.querySelector('.carousel');
@@ -126,8 +131,9 @@ function applyDarkModeStyles() {
   cuadro.classList.add("dark-reproductor");
 }
 
-// Remove dark mode styles
+// Elimina los estilos del modo oscuro
 function removeDarkModeStyles() {
+  // Selecciona los elementos y elimina las clases del modo oscuro
   let botonSvg = document.getElementById('botonSvg');
   let botonSvg2 = document.getElementById('botonSvg2');
   let carousel = document.querySelector('.carousel');
@@ -143,23 +149,24 @@ function removeDarkModeStyles() {
   cuadro.classList.remove("dark-reproductor");
 }
 
-// Function to initialize dark mode preference on page load
-document.addEventListener("DOMContentLoaded", function() {
+// Función para inicializar el modo oscuro al cargar la página
+document.addEventListener("DOMContentLoaded", function () {
   const darkModeToggle = document.getElementById('darkModeToggle');
 
-  // Retrieve dark mode preference from localStorage
+  // Obtiene el estado del modo oscuro de la cookie
   const isDarkMode = localStorage.getItem('darkMode') === 'true';
 
-  // Update toggle button based on preference
+  // Actualiza el boton del modo oscuro según el estado actual
   darkModeToggle.checked = isDarkMode;
 
-  // Apply dark mode if preference is true
+  // Aplica el modo oscuro si estaba activado
   if (isDarkMode) {
     toggleDarkMode();
   }
 });
 
-// Function called when dark mode toggle is clicked
+// Función llamada cuando se hace clic en el interruptor de modo oscuro
 function modoOscuroActivacion() {
-  toggleDarkMode();
+  // Activa o desactiva el modo oscuro
+  toggleDarkMode(); 
 }
