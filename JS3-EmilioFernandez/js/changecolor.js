@@ -118,7 +118,7 @@ function preguntaTiempo() {
   }
 }
 
-// 1 intervalo es = 1 milisegundo
+// 1 intervalo es = 1 milisegundo --> 1000 milisegundos = 1 seg
 // Por lo tanto 3 minutos = 180.000
 // Pregunta cada 3 minutos
 setInterval(preguntaTiempo, 180000);

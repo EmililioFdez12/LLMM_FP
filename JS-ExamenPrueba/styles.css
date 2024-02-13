@@ -29,7 +29,6 @@ body{
   
     display: flex;
     justify-content: space-around;
-
 }
 
 header > p{
@@ -58,10 +57,7 @@ header > p{
     text-decoration: none;
     color:rgb(255, 255, 255);
 }
-.efectos:hover{
-    color: yellow;
-    cursor: pointer;
-}
+
 
 .fondo{
     background-image: url("images/fondo.jpg");
