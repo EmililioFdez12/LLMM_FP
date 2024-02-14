@@ -1,5 +1,5 @@
 
-/* let arrayAleatorio = [];
+let arrayAleatorio = [];
 
 for (let i = 0; i < 50; i++) {
     let numerosArray = (parseInt(Math.random() * 120));
@@ -45,7 +45,7 @@ let media = (sumaNumeros / 50);
 alert("El número mayor del array es: " + numeroMayor);
 alert("El número menor del array es: " + numeroMenor);
 alert("La media del array es de: " + media);
- */
+
 
 let botonesCabecera = document.querySelectorAll(".efectos");
 
