@@ -128,6 +128,7 @@ function setColor() {
     }
   }
 
+  
 let segundos = 0;
 let intervalo;
 
