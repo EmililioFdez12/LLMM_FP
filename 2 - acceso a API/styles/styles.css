@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+
+.infoPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokemon{
+    width: 10vw;
+    height: auto;
+}
+
+input{
+    width: 25vw;
+    text-align: center;
+    height: auto;
+    border:2px solid #242424;
+    border-radius: 0.5vh;
+    background-color: yellowgreen;
+    padding: 1vh;
+    font-size:4vh;
+}
+
+input::placeholder{
+    color:#242424;
+    font-weight: bold;
+}
